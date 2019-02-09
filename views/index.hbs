@@ -1,0 +1,42 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<p>Welcome {{user}}</p>
+{{#if condition}}
+welcome you have met the condition
+{{else}}
+Sorry You havent met our condition.
+{{/if}}
+<br>
+array :
+<br>
+{{#each anyArray as |val key| }}
+{{!-- {{this}} --}}
+[position :{{key}} value:{{val}}]
+<br>
+{{/each}}
+<br>
+
+the values of the complete object is {{object}}
+<br />
+
+the values of the complete object is {{object.objectItem1}}
+<br />
+
+the values of the complete object is {{object.objectItem2}}
+
+<br>
+using with object
+{{#with object}}
+<div class="intro">{{{objectItem1}}}</div>
+<div class="body">{{{objectItem2}}}</div>
+{{/with}}
+<br>
+using each <br>
+===============
+{{#each people}}
+<li>{{this.firstName}} {{this.lastName}}</li>
+{{/each}}
+
+using customer helpers <br>
+{{#list people}}{{firstName}} {{lastName}}
+{{/list}}
