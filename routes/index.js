@@ -9,7 +9,7 @@ let context = {
     { firstName: 'Carl', lastName: 'Lerche' },
     { firstName: 'Alan', lastName: 'Johnson' }
   ],
-  title: 'Index Page',
+  title: 'HandleBars view engine project demo and custom helpers project',
   condition: false,
   object: {
     objectItem1: 'value item1',
